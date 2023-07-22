@@ -20,6 +20,7 @@ administrarJuego = {
 	preload: function () {
 		// Cargamos todo los assets del juego - imagenes
 		game.load.image('fondo', 'assets/images/fondo.jpg');
+		game.load.image('epg', 'assets/images/epg.png');
 		// Cargamos personajes al juego spritsheets
 		game.load.spritesheet('ratonVolador', 'assets/images/raton.png', 84, 156, 1);
 		game.load.spritesheet('diamantes', 'assets/images/diamantes.png', 81, 84, 4);
@@ -29,6 +30,7 @@ administrarJuego = {
 	create: function () {
 		// Ubicamos coordenadas en la esquina izquierda superior
 		game.add.sprite(0, 0, 'fondo');
+		game.add.sprite(755, 0, 'epg');// Imagen de la escuela
 		// Agregamos el sprite raton en la pantalla y agregamos a una instancia raton
 		this.ratonVolador = game.add.sprite(0, 0, 'ratonVolador');
 		// Agregamos el frame 0 del sprite raton
